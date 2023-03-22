@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('img/luke-chesser-eICUFSeirc0-unsplash.jpg');
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF4D2;
+}
+
+.container__campos {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 5% 10%;
+}
+
+
+.titulo-envio {
+    text-align: center;
+    /* color: rgb(5, 5, 143); */
+    color: #B9F3E4;
+    font-size: 1.5rem;
+    font-weight: 700;
+    
+}
+
+.opcoes {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.texto-categoria {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+
+.container__envio {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.input-nm-atividade, .input-descricao{
+    width: 40vw
+}
+
+.botao__envio{
+    padding: 1em 0 2em 0;
+}
+
+.botao-enviar{
+    padding: 1em 2em;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: linear 1s;
+}
+
+.botao-enviar:hover{
+    transform: scale(1.1);
+}
+
+.input-descricao{
+    font-size:18px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+    border-radius: 8px ;
+}
+
+.input-descricao:focus{
+    border-color:  rgb(23, 225, 251);
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.label-arquivo{
+    padding: 0.3em 0.5em;
+    background-image: linear-gradient(92.88deg, #3f23f3 9.16%, #3f23f3 43.89%, #3f23f3 20.72%);
+    border-radius: 8px;
+    border-style: none;
+    /* box-shadow: #ADCFFF 0 -12px 6px inset; */
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+}
+
+.seletor-opcoes, .input-nm-atividade{
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 0.3em 0.5em;
+}
+
+@media screen and (max-width: 390px){
+   
+
+    .opcoes{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .container{
+        width: 80%;
+    }
+}

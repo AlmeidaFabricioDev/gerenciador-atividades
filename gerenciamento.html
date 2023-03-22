@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerenciamento</title>
+</head>
+
+<body>
+<section class="container__campos">
+    <h1 class="titulo-envio">Envio de atividades complementares</h1>
+
+    <div class="opcoes">
+        <div class="container itens-categoria">
+            <p class="texto-categoria">Categorias</p>
+            <select name="Categorias" id="seletor-categorias" class="seletor-opcoes">
+                <option value="curso_extra">Curso extra curricular</option>
+                <option value="estagio">Estágio</option>
+                <option value="monitoria">Monitoria</option>
+                <option value="palestras">Palestras</option>
+                <option value="voluntariado">Programa de voluntariado</option>
+            </select>
+        </div>
+
+
+        <div class="container itens-curso">
+            <p class="texto-categoria">Curso</p>
+            <select name="curso" id="seletor-cursos" class="seletor-opcoes">
+                <option value="administracao">Administração</option>
+                <option value="direito">Direito</option>
+                <option value="psicologia">Psicologia</option>
+                <option value="tads">Análise e Desenvolvimento de Sistemas</option>
+            </select>
+        </div>
+
+
+        <div class="container itens-semestre">
+            <p class="texto-categoria">Semestre</p>
+            <select name="curso" id="seletor-cursos" class="seletor-opcoes">
+                <option value="primeiro">1º</option>
+                <option value="segundo">2º</option>
+                <option value="terceiro">3º</option>
+                <option value="quarto">4°</option>
+                <option value="quinto">5º</option>
+                <option value="sexto">6º</option>
+                <option value="setimo">7º</option>
+                <option value="oitavo">8º</option>
+                <option value="nono">9º</option>
+                <option value="decimo">10º</option>
+                <option value="decimo-primeiro">11º</option>
+                <option value="decimo-segundo">12°</option>
+            </select>
+        </div>
+    </div>
+
+    <!--Abaixo Inicia uma nova linha -->
+    <div class="opcoes">
+        <div class="container itens-semestre">
+            <p class="texto-categoria">Horas(Obrigatorio)</p>
+            <input type="number" class="seletor-opcoes">
+        </div>
+
+        <div class="container itens-semestre">
+            <p class="texto-categoria">Dt Inicio (Obrigatorio)</p>
+            <input type="date" class="seletor-opcoes">
+        </div>
+
+        <div class="container itens-semestre">
+            <p class="texto-categoria">Dt Término (Obrigatorio)</p>
+            <input type="date" class="seletor-opcoes">
+        </div>
+    </div>
+
+</section>
+    <!--Seção do titulo e descricao-->
+<section class="container__envio">
+    
+        <div class="titulo-atividade">
+            <p class="texto-categoria">Nome atividade</p>
+            <input type="text" name="nm-atividade" minlength="10" maxlength="100" class="input-nm-atividade">
+        </div>
+
+        <div class="descricao-atividade">
+            <label for="descricao-atividade">
+                <p class="texto-categoria">Descrição</p>
+            </label>
+            <textarea name="" id="" cols="30" rows="10" maxlength="500" class="input-descricao"></textarea>
+        </div>
+
+        <div class="arquivo">
+            <label for="arquivo" class="label-arquivo">Escolha um arquivo:</label>
+
+            <input type="file" id="arquivo" name="arquivo" accept="archive/pdf, archive/doc">
+        </div>
+
+        <div class="botao__envio">
+            <button class="botao-enviar">Envie seu arquivo</button>
+        </div>
+    
+
+</section>
+
+
+
+
+</body>
+
+</html>
